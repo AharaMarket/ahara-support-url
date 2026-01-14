@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ahara Support</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --primary: #4b2e83;
+      --primary-light: #f3ecff;
+      --accent: #ff9f1c;
+      --text: #222222;
+      --muted: #666666;
+      --bg: #f7f7fb;
+      --card-bg: #ffffff;
+      --radius-lg: 18px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #ffb347, #ffcc33);
+      padding: 32px 16px 40px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .logo-circle {
+      width: 78px;
+      height: 78px;
+      border-radius: 24px;
+      margin: 0 auto 12px;
+      background: #ffffff22;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      font-weight: 800;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    header h1 {
+      margin: 0 0 6px;
+      font-size: 28px;
+      letter-spacing: 0.03em;
+    }
+
+    header p {
+      margin: 0;
+      font-size: 15px;
+      opacity: 0.95;
+    }
+
+    main {
+      max-width: 920px;
+      margin: -28px auto 40px;
+      padding: 0 16px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: var(--radius-lg);
+      padding: 20px 18px;
+      margin-bottom: 16px;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      font-size: 20px;
+    }
+
+    .pill {
+      display: inline-block;
+      padding: 2px 10px;
+      border-radius: 999px;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      background: var(--primary-light);
+      color: var(--primary);
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .section-grid {
+      display: grid;
+      grid-template-columns: 1.25fr 1fr;
+      gap: 16px;
+    }
+
+    @media (max-width: 768px) {
+      .section-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-top: 6px;
+    }
+
+    li + li {
+      margin-top: 4px;
+    }
+
+    .highlight {
+      background: #fff8e6;
+      border-radius: 10px;
+      padding: 12px 12px;
+      font-size: 14px;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: underline;
+      text-decoration-thickness: 1.5px;
+      text-underline-offset: 2px;
+    }
+
+    .faq-item + .faq-item {
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px solid #eee;
+    }
+
+    .faq-question {
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+
+    .muted {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px 16px 32px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    code {
+      font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+        "Courier New", monospace;
+      font-size: 12px;
+      background: #f3f3f8;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-circle">a</div>
+    <h1>Ahara Support</h1>
+    <p>Help, feedback, and account management for the Ahara app.</p>
+  </header>
+
+  <main>
+    <!-- About Ahara -->
+    <section class="card">
+      <span class="pill">About</span>
+      <h2>What is Ahara?</h2>
+      <p>
+        Ahara helps groups coordinate food orders and catering more easily. You
+        can create a group, invite members, collect orders, and track
+        everything in one place.
+      </p>
+      <p class="muted">
+        Platform availability: iOS and Android (including closed testing on
+        Google Play while we finish development).
+      </p>
+    </section>
+
+    <!-- Contact & Support -->
+    <section class="card section-grid">
+      <div>
+        <span class="pill">Support</span>
+        <h2>Contact & Help</h2>
+        <p>
+          If you need help with Ahara, have a question, or want to report a
+          problem, you can reach us here:
+        </p>
+        <ul>
+          <li>
+            <strong>Email:</strong>
+            <a href="mailto:support@ahara-hub.com">support@ahara-hub.com</a>
+          </li>
+          <!-- You can change this to your real website when ready -->
+          <li>
+            <strong>Website:</strong>
+            <a href="https://ahara-hub.com" target="_blank" rel="noopener">
+              https://ahara-hub.com
+            </a>
+          </li>
+        </ul>
+        <p class="muted">
+          When contacting support, please include the email address you use in
+          Ahara and (if applicable) your device type (iPhone / Android).
+        </p>
+      </div>
+
+      <div>
+        <span class="pill">Quick links</span>
+        <div class="highlight">
+          <strong>Common topics</strong>
+          <ul style="margin-top:6px;">
+            <li>Inviting people to your group</li>
+            <li>Trouble signing in</li>
+            <li>Deleting a group you own</li>
+            <li>Deleting your Ahara account</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Account Deletion -->
+    <section id="account-deletion" class="card">
+      <span class="pill">Account</span>
+      <h2>How to delete your Ahara account</h2>
+      <p>
+        You can permanently delete your Ahara account directly from within the
+        app. Deleting your account removes your profile and signs you out. You
+        may lose access to your groups and related data.
+      </p>
+
+      <h3>Delete your account in the app</h3>
+      <ol>
+        <li>Open the <strong>Ahara</strong> app on your device.</li>
+        <li>Sign in with the account you wish to delete.</li>
+        <li>
+          Go to any group’s main screen (where you see the
+          <strong>Members</strong> and <strong>Orders</strong> tabs).
+        </li>
+        <li>
+          In the top-right corner, tap the
+          <strong>⋯ (three-dot)</strong> menu.
+        </li>
+        <li>Select <strong>Delete Account</strong>.</li>
+        <li>
+          Read the confirmation message carefully, then tap
+          <strong>Delete</strong> to confirm.
+        </li>
+      </ol>
+
+      <p class="muted">
+        Note: In some cases, for security reasons, you may be asked to sign in
+        again before your account can be deleted. This is required by our
+        authentication provider to verify that you are the account owner.
+      </p>
+
+      <h3>If you can’t access the app</h3>
+      <p>
+        If you no longer have access to the app or the email address you used
+        to sign up, you can request account deletion by contacting support:
+      </p>
+      <ul>
+        <li>
+          Email us at
+          <a href="mailto:support@ahara-hub.com">support@ahara-hub.com</a>
+        </li>
+        <li>Use the subject line: <code>Account Deletion Request</code></li>
+        <li>
+          Include the email address and phone number you used in Ahara, and any
+          group names you remember.
+        </li>
+      </ul>
+      <p class="muted">
+        We may ask for additional information to confirm ownership before
+        processing the deletion request.
+      </p>
+    </section>
+
+    <!-- Deleting a group -->
+    <section class="card">
+      <span class="pill">Groups</span>
+      <h2>Deleting a group you own</h2>
+      <p>
+        Only the group owner can delete a group. Deleting a group removes it
+        for all members.
+      </p>
+      <ol>
+        <li>Open the <strong>Ahara</strong> app and sign in.</li>
+        <li>Go to the group you own.</li>
+        <li>
+          On the group main screen, tap the <strong>⋯ (three-dot)</strong> menu
+          in the top-right.
+        </li>
+        <li>Select <strong>Delete Group</strong>.</li>
+        <li>Confirm when prompted.</li>
+      </ol>
+      <p class="muted">
+        This action cannot be undone. Existing messages and orders may be
+        permanently removed or become inaccessible.
+      </p>
+    </section>
+
+    <!-- FAQ -->
+    <section class="card">
+      <span class="pill">FAQ</span>
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          I didn’t receive the invite link. What should I do?
+        </div>
+        <div>
+          Ask the group owner to resend the invite via SMS or WhatsApp, and
+          make sure your device can open links. If you’re on Android closed
+          testing, confirm that you’ve accepted the testing program in Google
+          Play.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          The invite link opens but I don’t see the app in the store.
+        </div>
+        <div>
+          On Android, ensure you are signed in to the same Google account that
+          was added as a tester. On iOS, check that you are using the correct
+          App Store region if Ahara is only available in selected countries.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          Can I recover my account after it has been deleted?
+        </div>
+        <div>
+          No. Account deletion is permanent. Once your Ahara account has been
+          deleted, we are generally unable to restore it.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          How can I report a bug or request a feature?
+        </div>
+        <div>
+          Email us at
+          <a href="mailto:support@ahara-hub.com">support@ahara-hub.com</a> with
+          as much detail as possible (screenshots, steps to reproduce, device
+          model). We appreciate your feedback and use it to improve Ahara.
+        </div>
+      </div>
+    </section>
+
+    <!-- Privacy / Data -->
+    <section class="card">
+      <span class="pill">Privacy</span>
+      <h2>Data & Privacy</h2>
+      <p>
+        Ahara uses Firebase services (Authentication, Firestore, and
+        Messaging) to provide secure sign-in, store group and order information,
+        and deliver notifications.
+      </p>
+      <ul>
+        <li>
+          We collect basic account information you provide (such as name, email,
+          and phone number).
+        </li>
+        <li>
+          We use this information only to operate the app and communicate with
+          you about your account.
+        </li>
+        <li>
+          You can request deletion of your account and associated personal data
+          at any time using the steps above.
+        </li>
+      </ul>
+      <p class="muted">
+        For more details or specific privacy questions, please contact us at
+        <a href="mailto:support@ahara-hub.com">support@ahara-hub.com</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Ahara. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
